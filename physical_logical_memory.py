@@ -23,8 +23,8 @@ price2 = 10
 
 print(f"The variable name is {name} and it is saved at {id(name)}")
 print(f"The variable age is {age} and it is saved at {id(age)}")
-print(f"The variable score1 is {score1} and it is saved at {id(score1)}")
-print(f"The variable score2 is {score2} and it is saved at {id(score2)}")
+print(f"The variable score is {score} and it is saved at {id(score)}")
+print(f"The variable score is {score} and it is saved at {id(score)}")
 print(f"The variable height is {height} and it is saved at {id(height)}")
 print(f"The variable city is {city} and it is saved at {id(city)}")
 print(f"The variable zip_code is {zip_code} and it is saved at {id(zip_code)}")
