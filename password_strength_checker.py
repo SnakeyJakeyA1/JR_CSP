@@ -1,30 +1,48 @@
 # JR, Password Strength Checker assignment
 
 password = input("What is your password: ")
-length = "False"
 number = "False"
 characters = "False"
 upper = "False"
 lower = "False"
+space = "False"
 symbol = "False"
 
+symbols = "!@#$%^&*"
 
-if len(password) >=8:
-    print(password)
-else:
-    print(length)
+length = len(password) >=8
 
-if password.isnumeric():
-    print("You're missing an upercase and lowercase letter")
+for letter in password:
+    if password.isnumeric():
+        print(number)
+    if " " in password:
+        print(space)
+    if password.islower():
+        print(upper)
+    if password.isupper():
+        print(lower)
+    if password.isalpha():
+        print(characters)
 
-if " " in password:
-    print("Your password can't have spaces")
+rules_met = 0
 
-if password.islower():
-    print("You are missing an uppercase letter")
+if length:
+    rules_met = rules_met + 1
 
-if password.isupper():
-    print("You are missing a lowercase letter")
+if upper:
+    rules_met = rules_met + 1
 
-if password.isalpha():
-    print("You are missing a number")
+if lower:
+    rules_met = rules_met + 1
+
+if space:
+    rules_met = rules_met + 1
+
+if characters:
+    rules_met = rules_met + 1
+
+if number:
+    rules_met = rules_met + 1
+
+if symbol:
+    rules_met = rules_met + 1
