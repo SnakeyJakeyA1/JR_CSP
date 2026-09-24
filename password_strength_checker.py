@@ -1,7 +1,7 @@
 # JR, Password Strength Checker assignment
 
 password = input("What is your password: ")
-number = "False"
+number = False
 characters = "False"
 upper = "False"
 lower = "False"
@@ -14,7 +14,7 @@ length = len(password) >=8
 
 for letter in password:
     if password.isnumeric():
-        print(number)
+        number = True
     if " " in password:
         print(space)
     if password.islower():
