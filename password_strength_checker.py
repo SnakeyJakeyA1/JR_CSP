@@ -23,5 +23,3 @@ if password.isupper():
     print("You are missing a lowercase letter")
 if password.isalpha():
     print("You are missing a number")
-else:
-    print(password)
