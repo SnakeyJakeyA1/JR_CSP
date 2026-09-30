@@ -1,6 +1,8 @@
 # JR, Loops Notes
-import random
+
 # Code that will repeat over and over again.
+import random
+
 count = 1
 
 while count <= 10:

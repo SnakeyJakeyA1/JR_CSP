@@ -1,0 +1,13 @@
+# JR, cipher notes
+
+lower_start = "a"
+number = ord(lower_start)
+lower_end = "z"
+
+number += 2
+print(f"the letter {lower_start} is the number {ord(lower_start)}")
+print(f"the letter {lower_end} is the number {ord(lower_end)}")
+print(f"the letter {chr(number)} is the number {number}")
+# ord converts a letter to a number
+# chr converts a number to a letter
+
