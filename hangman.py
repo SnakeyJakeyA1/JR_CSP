@@ -2,8 +2,13 @@
 
 import random
 
-with open('hangman.txt' "r") as file:
+words = []
+
+with open('hangman.txt', "r") as file:
     content = file.read()
-    words = content.split(",")
-    word = random.choice()
     print(content)
+
+print(words)
+
+with open('hangman.txt', "r") as file:
+    words.append('lapy')
