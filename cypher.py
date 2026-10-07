@@ -2,6 +2,7 @@
 
 # Define Variables
 e_d = input("Would you like to (E)ncrypt or (D)ecrypt a message?: ")
+
 message = input("What is your message?: ")
 shift = int(input("Enter shift amount: "))
 
@@ -11,13 +12,17 @@ def cipher(message, shift):
 
     for letter in message:
         if letter.isalpha():
-            number = ord(letter)
+            number = ord(letter)+shift
+            result += chr(number)
+            if number > ord("Z") and letter.isupper():
+                number -= 26
+            elif number > ord("z") and letter.islower():
+                number -= 26
+        else:
+            result += letter
+    return result
 
-            if letter.isupper():
-                start = ord("A")
-            else:
-                start = ord("a")
 
-            position = (number - start)
-            position_2 = (position + shift) %26
 
+if e_d == "E":
+    print(cipher(message, shift))
