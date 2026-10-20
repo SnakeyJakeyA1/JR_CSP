@@ -16,3 +16,4 @@ with open("practice.txt", "w") as file:
     file.write("Hello")
         # .write lets you replace everything in the document.
 
+ 
