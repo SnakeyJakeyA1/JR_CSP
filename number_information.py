@@ -9,4 +9,5 @@ for number in range(1,21):
         evodnum = "even"
     else:
         evodnum = "odd"
-        print(f"{number} is {evodnum} and {devide5}")
+
+    print(f"{number} is {evodnum} and {devide5}")
