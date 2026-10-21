@@ -1,8 +1,8 @@
 # JR, Vibe code for a Theater assignment
+try:
+    age = int(input("Enter your age: "))
 
-age = int(input("Enter your age: "))
-
-if age.isnumeric():
+except:
     matinee = input("Is this a matinee? (yes/no): ").lower()
 
     if age < 5:
@@ -21,5 +21,3 @@ if age.isnumeric():
         price = 0
 
     print(f"Ticket price: ${price}")
-else:
-    print("Invalid age")
