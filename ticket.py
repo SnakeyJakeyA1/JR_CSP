@@ -1,5 +1,3 @@
-# JR, Vibe code for a Theater assignment
-
 age = int(input("Enter your age: "))
 matinee = input("Is this a matinee? (yes/no): ").lower()
 
@@ -14,11 +12,5 @@ else:
 
 if matinee == "yes":
     price = price - 3
-
-if price < 0:
-    price = 0
-
-if age.isalpha():
-    print("invalid age")
 
 print(f"Ticket price: ${price}")
